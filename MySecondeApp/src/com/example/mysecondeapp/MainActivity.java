@@ -218,5 +218,7 @@ public class MainActivity extends Activity {
         mTableSize.setText(String.valueOf(tableSize));
         mTableDataList = (TextView)findViewById(R.id.table_data_list_value);
         mTableDataList.setText(sb.toString());
+        
+        mTableDataList = (TextView)findViewById(R.id.table_data_list2_value);
 	}
 }

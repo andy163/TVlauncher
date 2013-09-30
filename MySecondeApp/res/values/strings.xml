@@ -13,4 +13,5 @@
     <string name="saved_high_score_default">100</string>
 	<string name="table_size">table size</string>
 	<string name="table_data_list">data list</string>
+	<string name="table_data_list2">data list</string>
 </resources>

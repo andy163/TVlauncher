@@ -39,11 +39,12 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f090008;
+        public static final int action_settings=0x7f090009;
         public static final int db_addData=0x7f090000;
         public static final int db_delData=0x7f090003;
         public static final int db_queryData=0x7f090001;
         public static final int db_updateData=0x7f090002;
+        public static final int table_data_list2_value=0x7f090008;
         public static final int table_data_list_value=0x7f090007;
         public static final int table_list=0x7f090006;
         public static final int table_size=0x7f090004;
@@ -67,6 +68,7 @@ public final class R {
         public static final int saved_high_score=0x7f060008;
         public static final int saved_high_score_default=0x7f060009;
         public static final int table_data_list=0x7f06000b;
+        public static final int table_data_list2=0x7f06000c;
         public static final int table_size=0x7f06000a;
     }
     public static final class style {
