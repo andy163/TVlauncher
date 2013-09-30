@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DB Programming</string>
+    <string name="action_settings">Settings</string>
+    <string name="db_programming">db programming</string>
+    <string name="using_sharedPreferences">Using SharedPreferences</string>
+    <string name="title_activity_shared_preferences_example">SharedPreferencesExample</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_internal_storage_example">InternalStorageExample</string>
+    <string name="internal_storage">InternalStorage</string>
+</resources>
