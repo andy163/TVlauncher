@@ -1,16 +1,92 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity" >
+    android:background="@color/dark_blue"
+    android:padding="8dip">
 
-    <TextView
+  	<TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/db_manage"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/font_large"
+        android:textColor="@color/light_blue"
+        android:paddingBottom="16dip"
+        />
+    
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-
-</RelativeLayout>
+        android:layout_gravity="center_horizontal"
+        >
+	    <Button
+	        android:id="@+id/db_addData"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/db_add" 
+	        android:onClick="addData"/>
+	 	 <Button
+	        android:id="@+id/db_queryData"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/db_addData"
+	        android:text="@string/db_query"
+	        android:onClick="queryData"/>
+	 	<Button
+	        android:id="@+id/db_updateData"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/db_queryData"
+	        android:text="@string/db_update"
+	        android:onClick="updateData" />
+	 	<Button
+	        android:id="@+id/db_delData"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/db_updateData"
+	        android:text="@string/db_del"
+	        android:onClick="delData"/>
+	 </RelativeLayout>
+	  	 
+    <TextView
+        android:id="@+id/table_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_medium"
+        android:text="@string/table_size"
+        android:textColor="@color/light_blue"
+        />
+	
+	 <TextView
+        android:id="@+id/table_size_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_medium"
+        android:textColor="@color/light_blue"
+        />
+	 
+	  <TextView
+	    android:id="@+id/table_list"  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_medium"
+        android:text="@string/table_data_list"
+        android:textColor="@color/light_blue"
+        />
+	  
+	<ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="260dp">
+        <TextView
+            android:id="@+id/table_data_list_value"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:padding="4dip"
+            android:typeface="monospace"
+            />
+    </ScrollView>
+</LinearLayout>

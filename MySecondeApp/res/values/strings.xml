@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">My Seconde App</string>
+    <string name="app_name">Data Manage</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
-
+    <string name="db_manage">sqlite manage</string>
+    <string name="db_add">add</string>
+    <string name="db_del">del</string>
+    <string name="db_update">update</string>
+    <string name="db_query">query</string>
+    <string name="preference_file_key">preference file key</string>
+    <string name="saved_high_score">saved high score</string>
+    <string name="saved_high_score_default">100</string>
+	<string name="table_size">table size</string>
+	<string name="table_data_list">data list</string>
 </resources>
